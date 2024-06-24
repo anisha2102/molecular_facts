@@ -1,4 +1,3 @@
-# molecular_facts
 # Molecular Facts: Desiderata for Decontextualization in LLM Fact Verification 
 
 Authors: Anisha Gunjal, Greg Durrett
