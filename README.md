@@ -6,7 +6,7 @@ Authors: Anisha Gunjal, Greg Durrett
 Please check out our work [here]() 📃
 
 <p align="center">
-    <img src="./images/intro.png" width="360">
+    <img src="./figs/intro.png" width="360">
 </p>
 
 ### Description
