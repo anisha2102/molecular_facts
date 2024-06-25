@@ -20,6 +20,9 @@ We quantify the impact of decontextualization on minimality, then present a base
 
 ### Usage
 An example of generating molecular fact is provided in demo.ipynb.
+```
+openai_key = os.environ["OPENAI_API_KEY"]
+```
 
 1. Step 1: Check for Ambiguity in a decontextualized claim
 ```
