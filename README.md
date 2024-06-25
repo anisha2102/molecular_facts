@@ -18,6 +18,19 @@ This work evaluates the impact of context and granularity on the factual verific
 We quantify the impact of decontextualization on minimality, then present a baseline methodology for generating molecular facts automatically, aiming to add the right amount of information.
 
 
+### Usage
+An example of generating molecular fact is provided in demo.ipynb.
+
+1. Step 1: Check for Ambiguity in a decontextualized claim
+```
+disambig_dict, _, _ = ambiguity_check(decontext, openai_key=openai_key)
+
+```
+2. Step 2: Decontextualize to genererate Molecular Fact
+```
+disambig_decontext, _, _ = decontextualize_ambiguity(claim, disambig_dict, context, openai_key=openai_key)
+
+```
 
 
 
