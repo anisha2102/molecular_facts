@@ -24,7 +24,7 @@ def ambiguity_check(claim, prompt=MOLECULAR_STAGE1_PROMPT, openai_key=None):
     if disambig_dict['subject'] is not None:
         subject = disambig_dict['subject']
 
-    return disambig_str, explanation, disambig_dict
+    return disambig_dict, disambig_str, explanation
 
 
 def decontextualize_ambiguity(claim, disambig, context, prompt=MOLECULAR_STAGE2_PROMPT, openai_key=None):
@@ -35,7 +35,7 @@ def decontextualize_ambiguity(claim, disambig, context, prompt=MOLECULAR_STAGE2_
     prompt = prompt.replace("[claim]", claim).replace("[disambiguation]", disambig).replace("[context]", context)
     res, _ = generate_with_prompt_GPT(prompt, engine="gpt-4-0125-preview", openai_key=openai_key)
     explanation, disambig_decontext = [x.strip() for x in res.split("##DECONTEXTUALIZED CLAIM##:")]
-    return res, explanation, disambig_decontext
+    return disambig_decontext, res, explanation
 
 
 
