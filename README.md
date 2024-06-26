@@ -19,13 +19,13 @@ We quantify the impact of decontextualization on minimality, then present a base
 
 
 ### Usage
-An example of generating molecular fact is provided in demo.ipynb.
+An example of generating molecular facts is provided in demo.ipynb.
 ```
 import os
 openai_key = os.environ["OPENAI_API_KEY"]
 ```
 
-1. Step 1: Check for Ambiguity in a claim
+1. Step 1: Check for ambiguity in a claim
 ```
 from src.utils import ambiguity_check
 llm_response = <llm-response> # long form LLM response
@@ -33,7 +33,7 @@ claim = <claim> # extracted from LLM response
 disambig_dict, _, _ = ambiguity_check(claim, openai_key=openai_key)
 
 ```
-2. Step 2: Decontextualize to genererate Molecular Fact
+2. Step 2: Decontextualize to generate molecular facts
 ```
 from src.utils import decontextualize_ambiguity
 disambig_decontext, _, _ = decontextualize_ambiguity(claim, disambig_dict, llm_response, openai_key=openai_key)
