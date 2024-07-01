@@ -2,7 +2,7 @@
 
 Authors: Anisha Gunjal, Greg Durrett
 
-Please check out our work [here]() 📃
+Please check out our work [here](http://arxiv.org/abs/2406.20079) 📃
 
 <p align="center">
     <img src="./figs/intro.png" width="360">
@@ -40,5 +40,18 @@ disambig_decontext, _, _ = decontextualize_ambiguity(claim, disambig_dict, llm_r
 
 ```
 
+## Citation
+
+If you found our work useful, please consider citing our work.
+```{bibtex}
+@misc{gunjal2024molecular,
+    title={Molecular Facts: Desiderata for Decontextualization in LLM Fact Verification},
+    author={Anisha Gunjal and Greg Durrett},
+    year={2024},
+    eprint={2406.20079},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
+}
+```
 
 
